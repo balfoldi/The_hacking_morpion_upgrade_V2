@@ -107,3 +107,13 @@ table {
 	border-radius: 20px;
 	border: none;
 }
+
+.bouton-active {
+	margin-bottom: 20px;
+	padding: 20px;
+	font-family: 'Lobster', cursive;
+	font-size: 80px;
+	background-color: black;
+	border-radius: 20px;
+	border: solid,red;
+}

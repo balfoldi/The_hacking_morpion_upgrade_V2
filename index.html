@@ -5,6 +5,8 @@
         <title>Morpion</title>
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="./style.css" type="text/css" />
+        <script src="https://kit.fontawesome.com/6085f87352.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <div id="titre">The Hacking Morpion</div>
@@ -31,8 +33,17 @@
             </table>
         </div>
         <div id="rejouer">
-            <button type="button" class="bouton" onclick="location.reload();">Rejouer</button>
+            <div>
+                <button id="iaEasy" style="color:lightblue" type="button" class="bouton" onclick="morpion.updateIa('easy')"><i class="fas fa-grin"></i></button>
+                <button id="iaNormal" style="color:yellow" type="button" class="bouton" onclick="morpion.updateIa('normal')"><i class="fas fa-frown"></i></button>
+                <button id="iaHard" style="color:orangered" type="button" class="bouton" onclick="morpion.updateIa('hard')"><i class="fas fa-angry"></i></button>
+
+                <button type="button" class="bouton" onclick="morpion.undo();"><i class="fas fa-undo"></i></button>
+                <button type="button" class="bouton" onclick="newGame()">Rejouer</button>
+                <button type="button" class="bouton" onclick="morpion.redo();"><i class="fas fa-redo"></i></button>
+            </div>
         </div>
+
         <script src="./morpion.js"></script>
     </body>
 </html>
